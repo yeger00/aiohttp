@@ -48,7 +48,7 @@ based server, :class:`~aiohttp.test_utils.RawTestServer` starts
 For performing HTTP requests to these servers you have to create a
 test client: :class:`~aiohttp.test_utils.TestClient` instance.
 
-The client incapsulates :class:`aiohttp.ClientSession` by providing
+The client encapsulates :class:`aiohttp.ClientSession` by providing
 proxy methods to the client for common operations such as
 *ws_connect*, *get*, *post*, etc.
 

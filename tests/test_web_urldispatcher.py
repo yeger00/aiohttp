@@ -534,7 +534,7 @@ async def test_access_compressed_file_as_symlink(
     assert resp.status == 404
     resp.release()
 
-    # Again symlin is ignored, and then uncompressed is served.
+    # Again symlink is ignored, and then uncompressed is served.
     txt_file = gz_link.with_suffix("")
     txt_file.write_text("public data")
     resp = await client.get(f"/{txt_file.name}")
